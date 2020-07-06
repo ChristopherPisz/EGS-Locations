@@ -10,6 +10,3 @@ admin.site.register(PlayfieldPOICount)
 admin.site.register(Resource)
 admin.site.register(DepositSize)
 admin.site.register(PlayfieldResourceCount)
-
-
-

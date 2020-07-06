@@ -1,0 +1,40 @@
+{% extends 'egs_locations_app/base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+        <div class="col-md-10 col-xs-10 col-sm-10">
+            <h3 class="round3" style="text-align:center;">Playfields</h3>
+        </div>
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-xs-10 col-sm-10"></div>
+        <div class="col-md-2 col-xs-1 col-sm-1">
+            <br/>
+            Create button
+        </div>
+    </div>
+    <br/>
+    {% for playfield in playfield_list %}
+    <div class="row">
+        <div class="col-md-1 col-xs-1 col-sm-1">spacer</div>
+        <div class="col-md-7 col-xs-7 col-sm-7">
+            <ul class="list-group">
+                <li class="list-group-item ">
+                    Detail link
+                </li>
+            </ul>
+            <br>
+        </div>
+        <div class="col-md-1">
+            Edit button
+        </div>
+        <div class="col-md-1">
+            Delete button
+        </div>
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
